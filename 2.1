@@ -1,0 +1,21 @@
+#include <iostream>
+#include <stdio.h>
+#include <limits.h>
+/* 2.1 - Escribe un programa para determinar los rangos de variables char, short, int y long; tango signed como unsigned, imprimiendo los valores apropiados de los headers estándar y por calculo directo. Es más difícil si los calcula: determine los rangos de los varios tipos de punto flotante. */
+
+int main()
+{
+
+	printf("Rangos de char, short, int, long\n");
+	printf("===================================\n");
+	printf("Valor de char: %d (minimo) hasta %d (maximo) \n", SCHAR_MIN, SCHAR_MAX);
+	printf("Valor de short: %d (minimo) hasta %d (maximo) \n", SHRT_MIN, SHRT_MAX);
+	printf("Valor de int: %d (minimo hasta %d (maximo) \n", INT_MIN, INT_MAX);
+	printf("Valor de long: %ld (minimo) hasta %ld (maximo) \n", LONG_MIN, LONG_MAX);
+	printf("Valor maximo 'unsigned char': %u \n", UCHAR_MAX);
+	printf("Valor maximo 'unsigned short': %u \n", USHRT_MAX);
+	printf("Valor maximo 'unsigned int': %u \n", UINT_MAX);
+	printf("Valor maximo 'unsigned long': %lu \n", ULONG_MAX);
+	
+	return 0;
+}
